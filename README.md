@@ -1,61 +1,33 @@
-# GERENCIAMENTO_FRUTAS_GUI
+# ExemploListInterativo
+Este projeto visa criar uma aplicação em Java para gerenciar uma lista de frutas usando `ArrayList`. A aplicação permite adicionar, listar, remover e verificar frutas presentes na lista.
 
+Execute a classe `ExemploListInterativo` para testar as funcionalidades.
 
-*Projeto Java: Array e Interfaces para Gerenciamento de Frutas*
+## 🚀 Começando
+O objetivo é praticar manipulação de listas e implementar operações básicas em uma coleção de dados em Java.
 
-*Descrição*
+### Funcionalidades
 
-Este projeto visa combinar conhecimentos sobre array e interfaces em Java, criando um sistema de gerenciamento de frutas.
+- **Adicionar Fruta:** Permite ao usuário adicionar uma nova fruta na lista.
+- **Listar Frutas:** Exibe todas as frutas adicionadas.
+- **Remover Fruta:** Remove uma fruta específica da lista, caso esteja presente.
+- **Verificar Fruta:** Verifica se uma fruta está presente na lista.
+- **Sair:** Encerra o programa.
 
-*Objetivo*
-
-Desenvolver habilidades em:
-
-- Utilização de arrays para armazenamento de dados
-- Criação e implementação de interfaces
-- Integração entre arrays e interfaces
-
-*Funcionalidades*
-
-- Interface `Fruta` com métodos:
-    - `getNome()`
-    - `getPreco()`
-    - `getQuantidade()`
-- Classe `FrutaImplementacao` implementando `Fruta`
-- Classe `GerenciamentoFrutas` com métodos para:
-    - Cadastrar frutas
-    - Listar frutas
-    - Calcular total de frutas
-    - Calcular valor total de frutas
-
-*Tecnologias Utilizadas*
-
-- Linguagem: Java
-- IDE: Eclipse
-
-*Versão*
-
-Versão 1.0
-
-*Autor*
-
-[Seu Nome]
-
-*Instalação*
+## 🔧 Instalação
 
 1. Clone o repositório.
-2. Abra o projeto no Eclipse.
-3. Execute a classe `GerenciamentoFrutas`.
+2. Abra o projeto no seu ambiente de desenvolvimento Java preferido (Eclipse, IntelliJ, etc.).
+3. Execute a classe `ExemploListInterativo` para iniciar o programa.
 
-*Uso*
+## 🛠️ Construído com
 
-Execute a classe `GerenciamentoFrutas` para testar as funcionalidades.
+- **Linguagem:** Java
+- **Biblioteca:** ArrayList
+- **IDE:** Qualquer IDE que suporte Java (Eclipse, IntelliJ, VS Code, etc.)
 
-*Estrutura do Projeto*
+## 📌 Versão
+Versão 1.0
 
-- `src`
-    - `Fruta.java` (interface)
-    - `FrutaImplementacao.java` (classe)
-    - `GerenciamentoFrutas.java` (classe principal)
-
-Espero que isso ajude!
+## 🖋️ Autor
+Taynara Raquel
