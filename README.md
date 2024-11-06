@@ -1,4 +1,7 @@
 # GERENCIAMENTO_FRUTAS_GUI
+
+![TELA](img.png)
+
 Este projeto implementa uma aplicação em Java para gerenciar uma lista de frutas utilizando uma interface gráfica (GUI) com Swing. A aplicação permite ao usuário adicionar, modificar e remover frutas da lista interativa.
 
 ## 📋 Funcionalidades
