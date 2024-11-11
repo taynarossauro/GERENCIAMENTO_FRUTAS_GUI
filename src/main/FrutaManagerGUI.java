@@ -1,25 +1,25 @@
 package main;
 
-// Importando bibliotecas necessárias
+//Importando bibliotecas necessárias
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.ArrayList;
 
-// A classe FrutaManagerGUI lida com a gestão de frutas na interface gráfica
+//Essa classe: FrutaManagerGUI lida com a gestão de frutas na interface gráfica
 public class FrutaManagerGUI {
 	// Declaração das variáveis
 	private ArrayList<String> frutas;
 	private DefaultListModel<String> listModel;
 	private JList<String> list;
 	
-	// Construtor que inicializa a lista de frutas com uma ArrayList
+	//Construtor que inicializa a lista de frutas com uma ArrayList
 	public FrutaManagerGUI() {
 		frutas = new ArrayList<>();
 		listModel = new DefaultListModel<>();
 
-		// Configuração do JFrame para a interface principal
+		//Configuração do JFrame para a interface principal
 		JFrame frame = new JFrame("Gerenciador de Frutas");
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.setSize(500,300);
@@ -32,7 +32,7 @@ public class FrutaManagerGUI {
 		JTextField frutaField = new JTextField(15);
 		panel.add(frutaField);
 		
-		// Botões de ação para o usuário interagir com a lista de frutas
+		//Botões de ação para o usuário interagir com a lista de frutas
 		JButton addButton = new JButton("Adicionar");
 		panel.add(addButton);
 		
@@ -41,7 +41,7 @@ public class FrutaManagerGUI {
 		modifyButton.setEnabled(false); // Desabilitado inicialmente sem seleção
 		panel.add(modifyButton);
 		
-		// Botão para remover uma fruta selecionada
+		//Botão para remover uma fruta selecionada
 		JButton removeButton = new JButton("Remover");
 		removeButton.setEnabled(false); // Desabilitado sem seleção
 		panel.add(removeButton);
@@ -53,7 +53,7 @@ public class FrutaManagerGUI {
 		JScrollPane scrollPane = new JScrollPane(list); // Proporciona rolagem
 		frame.add(scrollPane, BorderLayout.CENTER);
 		
-		// Botão que lista todas as frutas no console
+		//Botão que lista todas as frutas no console
 		JButton listButton = new JButton("Listar Frutas");
 		frame.add(listButton,BorderLayout.SOUTH);
 		
@@ -71,7 +71,7 @@ public class FrutaManagerGUI {
 			}
 		});
 	
-		// Evento para modificar uma fruta já existente
+		//evento para modificar uma fruta já existente
 		modifyButton.addActionListener(new ActionListener() {
 			@Override
 			public void actionPerformed(ActionEvent e) {
@@ -90,7 +90,7 @@ public class FrutaManagerGUI {
 			}
 		});				
 	
-		// Evento para remover a fruta selecionada da lista
+		// evento para remover a fruta selecionada da lista
 		removeButton.addActionListener(new ActionListener() {
 			@Override
 			public void actionPerformed(ActionEvent e) {
@@ -117,14 +117,14 @@ public class FrutaManagerGUI {
 			}
 		});
 		
-		// Habilita/desabilita os botões de ação dependendo da seleção na lista
+		//Habilita e desabilita os botões de ação dependendo da seleção na lista
 		list.addListSelectionListener(e -> {
 			boolean selectionExists = !list.isSelectionEmpty();
 			removeButton.setEnabled(selectionExists);
 			modifyButton.setEnabled(selectionExists);
 		});
 		
-		// Define a visibilidade do frame como verdadeira para exibição ao usuário
+		// Define a visibilidade do frame
 		frame.setVisible(true);
 	}
 
